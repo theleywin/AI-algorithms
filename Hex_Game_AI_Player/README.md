@@ -29,7 +29,7 @@ The `RavePlayer` class overrides the `play()` method. Before invoking MCTS, it f
 #### ▸ Selection
 Starting from the root node (current board state), the algorithm recursively selects child nodes using a combination of exploitation, exploration, and RAVE value — choosing the child with the best score:
 
-$score = (1 - \beta) \cdot \text{exploitation} + \beta \cdot \text{rave\_value} + \text{exploration}$
+$score = (1 - \beta) \cdot \text{exploitation} + \beta \cdot \text{raveValue} + \text{exploration}$
 
 Where:
 - `exploitation = wins / visits`
